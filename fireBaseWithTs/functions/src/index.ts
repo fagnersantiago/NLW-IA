@@ -1,8 +1,17 @@
+import * as firebase_admin from "firebase-admin";
 import * as functions from "firebase-functions";
+import * as express from "express";
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
+firebase_admin.initializeApp(functions.config().firebase);
 
-export const helloWorld = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase!");
-});
+const app = express();
+const main = express();
+
+main.use("/api/v1", app);
+main.use(express.json());
+
+export const db = firebase_admin.firestore();
+export const userColection = "users";
+export const firstApiWithFirebase = functions.https.onRequest(main);
+
+export default app;
