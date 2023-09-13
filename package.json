@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "lucide-react": "^0.276.0",
+    "shadcn-ui": "^0.3.0"
+  }
+}
