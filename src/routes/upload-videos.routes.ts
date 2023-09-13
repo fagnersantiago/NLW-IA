@@ -45,7 +45,7 @@ export async function uploadVideo(app: FastifyInstance) {
         createdAt: new Date(),
       },
     });
-
+    // falta conectar com IA
     return { video };
   });
 }
