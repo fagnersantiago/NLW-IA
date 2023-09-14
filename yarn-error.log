@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Users\fagne\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\fagne\bin;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;%ANDROID_HOME%\emulator;%ANDROID_HOME%\tools;%ANDROID_HOME%\tools\bin;%ANDROID_HOME%\platform-tools;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\fagne\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\fagne\AppData\Local\Microsoft\WindowsApps;C:\Users\fagne\AppData\Local\Microsoft\WindowsApps;C:\Users\fagne\AppData\Local\Yarn\bin;C:\Users\fagne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\fagne\AppData\Roaming\npm;C:\ProgramData\chocolatey\lib\deno;C:\Program Files\Docker Toolbox;C:\Users\fagne\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  20.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\fagne\Documents\NLW-IA\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "upload-ia-backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "tsx watch  src/server.ts"
+    },
+    "devDependencies": {
+      "@types/node": "^20.6.0",
+      "prisma": "^5.3.0",
+      "tsx": "^3.12.10",
+      "typescript": "^5.2.2"
+    },
+    "dependencies": {
+      "@fastify/multipart": "^7.7.3",
+      "@prisma/client": "^5.3.0",
+      "fastify": "^4.23.1",
+      "openai": "^4.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
