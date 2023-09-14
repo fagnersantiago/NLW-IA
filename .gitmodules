@@ -1,0 +1,3 @@
+[submodule "upload-ia-backend"]
+	path = upload-ia-backend
+	url = https://github.com/fagnersantiago/NLW-IA.git
