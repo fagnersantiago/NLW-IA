@@ -18,7 +18,7 @@ import { useCompletion } from "ai/react";
 
 export function App() {
   const [temperature, setTemperature] = useState(0.5);
-  const [id, setVideoId] = useState<string | null>(null);
+  const [videoId, setVideoId] = useState<string | null>(null);
 
   const {
     input,
@@ -30,7 +30,7 @@ export function App() {
   } = useCompletion({
     api: "http://localhost:3333/ai/complete",
     body: {
-      id,
+      videoId,
       temperature,
     },
     headers: {

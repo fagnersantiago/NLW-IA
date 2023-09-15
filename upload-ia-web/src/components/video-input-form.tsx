@@ -41,11 +41,14 @@ export function VideoInputForm(props: VideoInputFormProps) {
 
   async function convertVideoToAudio(video: File) {
     console.log("Convert started.");
-
+    console.log("chegou aqui ");
     const ffmpeg = await getFFmpeg();
 
     await ffmpeg.writeFile("input.mp4", await fetchFile(video));
 
+    ffmpeg.on("log", (log) => {
+      console.log(log);
+    });
     ffmpeg.on("progress", (progress) => {
       console.log("Convert progress: " + Math.round(progress.progress * 100));
     });
